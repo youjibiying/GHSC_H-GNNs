@@ -47,7 +47,7 @@ Following [HGNN](http://gaoyue.org/paper/HGNN.pdf), the datasets can download as
 - [ModelNet40_mvcnn_gvcnn_feature](https://drive.google.com/file/d/1euw3bygLzRQm_dYj1FoRduXvsRRUG2Gr/view?usp=sharing)
 - [NTU2012_mvcnn_gvcnn_feature](https://drive.google.com/file/d/1Vx4K15bW3__JPRV0KUoDWtQX8sB-vbO5/view?usp=sharing)
 
-Then put it intot the raw_data
+Then put it into the raw_data
 ```
 data/raw_data/NTU2012_mvcnn_gvcnn.mat
 data/raw_data/ModelNet40_mvcnn_gvcnn.mat
