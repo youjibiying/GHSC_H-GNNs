@@ -38,7 +38,7 @@ GHSC_H-GNNS/data
     ...
 ```
 
-### Data  for HyperGCN split
+### Data Preparation for HyperGCN split （The table in the main paper）
 1. citation network:
 directly use the data split form the [HuggingFace Hub](https://huggingface.co/datasets/peihaowang/edgnn-hypergraph-dataset) above
 or download it from https://github.com/youjibiying/H-GNNs/tree/main/data
