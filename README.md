@@ -98,7 +98,6 @@ python train.py --method H_GCNII --dname house-committees-100 --lr 0.001 --degre
 
 ## Citation
 
-This repository is build based on AllSet [official repository](https://github.com/jianhao2016/AllSet).
 If you find this work or our code implementation helpful for your own resarch or work, please cite our paper.
 ```
 @inproceedings{zhang2025unified,
@@ -108,7 +107,7 @@ If you find this work or our code implementation helpful for your own resarch or
   year={2025}
 }
 ```
-We would like to appreciate the excellent work of ED-HNN, which lay a solid foundation for our work.
+We would like to appreciate the excellent work of ED-HNN ([official repository](https://github.com/Graph-COM/ED-HNN)), which lay a solid foundation for our work.
 
 ## TODO: ajust hyperparameters
 python train.py --method H_GCNII --dname ModelNet40_large --lr 0.001 --degree 2 --MLP_hidden 128 --wd 0.005 --epochs 500 --runs 10 --cuda 3  --data_dir data/ModelNet40_large --raw_data_dir data/raw_data/ --no_random_split  --H_GNN_alpha 0.15 --H_GNN_lamda 0.55 --dropout 0.5 
