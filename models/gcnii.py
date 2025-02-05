@@ -206,7 +206,6 @@ class H_GCNII(nn.Module):
             layer_inner = self.act_fn(con(x=layer_inner, x_0=_layers[0], edge_index=data.edge_index_graph,edge_weight=data.edge_weight_graph))
         layer_inner = F.dropout(layer_inner, self.dropout, training=self.training)
         layer_inner = self.fcs[-1](layer_inner)
-        # self.adj = con.adj  # 保存看看学的结果
         return layer_inner  # F.log_softmax(layer_inner, dim=1)
 
     def get_outdim(self):
