@@ -71,11 +71,8 @@ python train.py --method H_GCNII --dname coauthor_cora --lr 0.001 --degree 32 --
 python train.py --method H_GCNII --dname NTU2012_large --lr 0.001 --degree 2 --MLP_hidden 128 --wd 0.005 --epochs 500 --runs 10 --cuda 1 --data_dir data/NTU2012_large --raw_data_dir data/raw_data/ --no_random_split --no_mvcnn_feature_structure --no_use_mvcnn_feature &
 python train.py --method H_GCNII --dname NTU2012_large --lr 0.001 --degree 4 --MLP_hidden 256 --wd 0.005 --epochs 500 --runs 10 --cuda 2 --data_dir data/NTU2012_large --raw_data_dir data/raw_data/ --no_random_split --no_gvcnn_feature_structure --no_use_gvcnn_feature
 python train.py --method H_GCNII --dname NTU2012_large --lr 0.001 --degree 4 --MLP_hidden 256 --wd 0.005 --epochs 500 --runs 10 --cuda 0 --data_dir data/NTU2012_large --raw_data_dir data/raw_data/ --no_random_split
-
-python train.py --method H_GCNII --dname ModelNet40_large --lr 0.001 --degree 2 --MLP_hidden 128 --wd 0.005 --epochs 500 --runs 10 --cuda 3  --data_dir data/ModelNet40_large --raw_data_dir data/raw_data/ --no_random_split --no_gvcnn_feature_structure --no_use_gvcnn_feature --H_GNN_alpha 0.05 --H_GNN_lamda 0.5 --dropout 0.2 & 
-
+python train.py --method H_GCNII --dname ModelNet40_large --lr 0.001 --degree 2 --MLP_hidden 128 --wd 0.005 --epochs 500 --runs 10 --cuda 3  --data_dir data/ModelNet40_large --raw_data_dir data/raw_data/ --no_random_split --no_gvcnn_feature_structure --no_use_gvcnn_feature --H_GNN_alpha 0.05 --H_GNN_lamda 0.5 --dropout 0.2 
 python train.py --method H_GCNII --dname ModelNet40_large --lr 0.001 --degree 2 --MLP_hidden 256 --wd 0.005 --epochs 500 --runs 10 --cuda 0 --data_dir data/ModelNet40_large --raw_data_dir data/raw_data/ --no_random_split --no_mvcnn_feature_structure --no_use_mvcnn_feature
-python train.py --method H_GCNII --dname ModelNet40_large --lr 0.001 --degree 64 --MLP_hidden 128 --wd 0.005 --epochs 500 --runs 10 --cuda 0 --data_dir data/ModelNet40_large --raw_data_dir data/raw_data/ --no_random_split --no_mvcnn_feature_structure --no_use_mvcnn_feature
 python train.py --method H_GCNII --dname ModelNet40_large --lr 0.001 --degree 2 --MLP_hidden 128 --wd 0.005 --epochs 500 --runs 10 --cuda 0 --data_dir data_1/data/ModelNet40_large --raw_data_dir data_1/data/raw_data/ --no_random_split --H_GNN_alpha 0.3 --H_GNN_lamda 0.55 --dropout 0.5
  
  ```
