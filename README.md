@@ -52,12 +52,13 @@ Then put it into the raw_data
 data/raw_data/NTU2012_mvcnn_gvcnn.mat
 data/raw_data/ModelNet40_mvcnn_gvcnn.mat
 ```
-## Training
+## Train and test
 
 
 
 ###   H-GCNII for HyperGCN split (--no_random_split)
 
+- TABLE 1 in the main paper
 ```
 python train.py --method H_GCNII --dname cora --lr 0.001 --degree 32 --MLP_hidden 128 --wd 0.001 --epochs 500 --runs 10 --cuda 0 --data_dir data/cocitation/cora --raw_data_dir data/raw_data/cocitation/cora --no_random_split
 python train.py --method H_GCNII --dname citeseer --lr 0.001 --degree 2 --MLP_hidden 128 --wd 0.001 --epochs 500 --runs 10 --cuda 0 --data_dir data/cocitation/citeseer --raw_data_dir data/raw_data/cocitation/citeseer --no_random_split
@@ -66,7 +67,7 @@ python train.py --method H_GCNII --dname coauthor_dblp --lr 0.001 --degree 32 --
 python train.py --method H_GCNII --dname coauthor_cora --lr 0.001 --degree 32 --MLP_hidden 128 --wd 0.001 --epochs 500 --runs 10 --cuda 2 --data_dir data/coauthorship/cora --raw_data_dir data/raw_data/coauthorship/cora --no_random_split
 ```
 
-
+- TABLE 2 in the main paper
 ```
 python train.py --method H_GCNII --dname NTU2012_large --lr 0.001 --degree 2 --MLP_hidden 128 --wd 0.005 --epochs 500 --runs 10 --cuda 1 --data_dir data/NTU2012_large --raw_data_dir data/raw_data/ --no_random_split --no_mvcnn_feature_structure --no_use_mvcnn_feature &
 python train.py --method H_GCNII --dname NTU2012_large --lr 0.001 --degree 4 --MLP_hidden 256 --wd 0.005 --epochs 500 --runs 10 --cuda 2 --data_dir data/NTU2012_large --raw_data_dir data/raw_data/ --no_random_split --no_gvcnn_feature_structure --no_use_gvcnn_feature
@@ -79,6 +80,7 @@ python train.py --method H_GCNII --dname ModelNet40_large --lr 0.001 --degree 2 
  
 ### H-GCNII for ED-HNN split
 
+- TABLE 1 in the summary of changes
 ```
 python train.py --method H_GCNII --dname cora --lr 0.001 --degree 32 --MLP_hidden 128 --wd 0.001 --epochs 500 --runs 10 --cuda 0 --data_dir data/cocitation/cora --raw_data_dir data/raw_data/cocitation/cora
 python train.py --method H_GCNII --dname citeseer --lr 0.001 --degree 2 --MLP_hidden 128 --wd 0.001 --epochs 500 --runs 10 --cuda 0 --data_dir data/cocitation/citeseer --raw_data_dir data/raw_data/cocitation/citeseer
