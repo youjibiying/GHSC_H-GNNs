@@ -101,7 +101,7 @@ If you find this work or our code implementation helpful for your research or wo
 ```
 @inproceedings{zhang2025unified,
   title={ A Unified Random Walk, Its Induced  Laplacians and  Spectral Convolutions for Deep Hypergraph Learning},
-  author={ Jiying Zhang, Fuyang Li, Xi Xiao, Guanzi Chen, Yu Li, Tingyang Xu, Yu Rong, Junzhou Huang, Yatao Bian},
+  author={ Jiying Zhang, Fuyang Li, Xi Xiao, Guanzi Chen, Tingyang Xu, Yu Rong, Junzhou Huang, Yatao Bian},
   booktitle={Arxiv},
   year={2025}
 }
