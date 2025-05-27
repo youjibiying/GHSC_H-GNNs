@@ -80,7 +80,7 @@ python train.py --method H_GCNII --dname ModelNet40_large --lr 0.001 --degree 2 
  
 ### H-GCNII for ED-HNN split
 
-- TABLE 1 in the summary of changes
+- TABLE 12 in the appendix
 ```
 python train.py --method H_GCNII --dname cora --lr 0.001 --degree 32 --MLP_hidden 128 --wd 0.001 --epochs 500 --runs 10 --cuda 0 --data_dir data/cocitation/cora --raw_data_dir data/raw_data/cocitation/cora
 python train.py --method H_GCNII --dname citeseer --lr 0.001 --degree 2 --MLP_hidden 128 --wd 0.001 --epochs 500 --runs 10 --cuda 0 --data_dir data/cocitation/citeseer --raw_data_dir data/raw_data/cocitation/citeseer
