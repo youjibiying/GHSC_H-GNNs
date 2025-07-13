@@ -3,7 +3,7 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://opensource.org/licenses/MIT)
 
 The official implementation of the Journal paper [A Unified Random Walk, Its Induced  Laplacians and  Spectral Convolutions for Deep Hypergraph Learning](https://youjibiying.github.io/files/TPAMI-Under_review_A_Unified_Random_Walk.pdf).
-Jiying Zhang, Fuyang Li, Xi Xiao, Guanzi Chen, Yu Li, Tingyang Xu, Yu Rong, Junzhou Huang, Yatao Bian
+Jiying Zhang, Fuyang Li, Xi Xiao, Guanzi Chen, Tingyang Xu, Yu Rong, Junzhou Huang, Yatao Bian
 
 ## Introduction
 
