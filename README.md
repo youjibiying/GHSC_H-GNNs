@@ -5,6 +5,7 @@
 The official implementation of the Journal paper [A Unified Random Walk, Its Induced  Laplacians and  Spectral Convolutions for Deep Hypergraph Learning](https://youjibiying.github.io/files/TPAMI-Under_review_A_Unified_Random_Walk.pdf).
 Jiying Zhang, Fuyang Li, Xi Xiao, Guanzi Chen, Tingyang Xu, Yu Rong, Junzhou Huang, Yatao Bian
 
+The source code of protein fold classification and quality accessment can be found at [GHSC_H-GNNs_Protein](https://github.com/youjibiying/GHSC_H-GNNs_Protein/).
 ## Introduction
 
 <!-- 
