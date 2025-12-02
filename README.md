@@ -2,10 +2,10 @@
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://opensource.org/licenses/MIT)
 
-The official implementation of the Journal paper [A Unified Random Walk, Its Induced  Laplacians and  Spectral Convolutions for Deep Hypergraph Learning](https://youjibiying.github.io/files/TPAMI-Under_review_A_Unified_Random_Walk.pdf).
+The official implementation of the paper [A Unified Random Walk, Its Induced  Laplacians and  Spectral Convolutions for Deep Hypergraph Learning](https://ieeexplore.ieee.org/document/11103747), accepted to TPAMI.
 Jiying Zhang, Fuyang Li, Xi Xiao, Guanzi Chen, Tingyang Xu, Yu Rong, Junzhou Huang, Yatao Bian
 
-The source code of protein fold classification and quality accessment can be found at [GHSC_H-GNNs_Protein](https://github.com/youjibiying/GHSC_H-GNNs_Protein/).
+The source code of protein fold classification and quality assessment can be found at [GHSC_H-GNNs_Protein](https://github.com/youjibiying/GHSC_H-GNNs_Protein/).
 ## Introduction
 
 <!-- 
@@ -59,8 +59,8 @@ data/raw_data/ModelNet40_mvcnn_gvcnn.mat
 
 ###   H-GCNII for HyperGCN split (--no_random_split)
 
-- TABLE 1 in the main paper
-```
+
+``` 
 python train.py --method H_GCNII --dname cora --lr 0.001 --degree 32 --MLP_hidden 128 --wd 0.001 --epochs 500 --runs 10 --cuda 0 --data_dir data/cocitation/cora --raw_data_dir data/raw_data/cocitation/cora --no_random_split
 python train.py --method H_GCNII --dname citeseer --lr 0.001 --degree 2 --MLP_hidden 128 --wd 0.001 --epochs 500 --runs 10 --cuda 0 --data_dir data/cocitation/citeseer --raw_data_dir data/raw_data/cocitation/citeseer --no_random_split
 python train.py --method H_GCNII --dname pubmed --lr 0.001 --degree 4 --MLP_hidden 512 --wd 0.001 --epochs 600 --runs 10 --cuda 3 --data_dir data/cocitation/pubmed --raw_data_dir data/raw_data/cocitation/pubmed --no_random_split
@@ -68,7 +68,7 @@ python train.py --method H_GCNII --dname coauthor_dblp --lr 0.001 --degree 32 --
 python train.py --method H_GCNII --dname coauthor_cora --lr 0.001 --degree 32 --MLP_hidden 128 --wd 0.001 --epochs 500 --runs 10 --cuda 2 --data_dir data/coauthorship/cora --raw_data_dir data/raw_data/coauthorship/cora --no_random_split
 ```
 
-- TABLE 2 in the main paper
+
 ```
 python train.py --method H_GCNII --dname NTU2012_large --lr 0.001 --degree 2 --MLP_hidden 128 --wd 0.005 --epochs 500 --runs 10 --cuda 1 --data_dir data/NTU2012_large --raw_data_dir data/raw_data/ --no_random_split --no_mvcnn_feature_structure --no_use_mvcnn_feature &
 python train.py --method H_GCNII --dname NTU2012_large --lr 0.001 --degree 4 --MLP_hidden 256 --wd 0.005 --epochs 500 --runs 10 --cuda 2 --data_dir data/NTU2012_large --raw_data_dir data/raw_data/ --no_random_split --no_gvcnn_feature_structure --no_use_gvcnn_feature
@@ -81,7 +81,6 @@ python train.py --method H_GCNII --dname ModelNet40_large --lr 0.001 --degree 2 
  
 ### H-GCNII for ED-HNN split
 
-- TABLE 12 in the appendix
 ```
 python train.py --method H_GCNII --dname cora --lr 0.001 --degree 32 --MLP_hidden 128 --wd 0.001 --epochs 500 --runs 10 --cuda 0 --data_dir data/cocitation/cora --raw_data_dir data/raw_data/cocitation/cora
 python train.py --method H_GCNII --dname citeseer --lr 0.001 --degree 2 --MLP_hidden 128 --wd 0.001 --epochs 500 --runs 10 --cuda 0 --data_dir data/cocitation/citeseer --raw_data_dir data/raw_data/cocitation/citeseer
@@ -100,12 +99,16 @@ python train.py --method H_GCNII --dname house-committees-100 --lr 0.001 --degre
 
 If you find this work or our code implementation helpful for your research or work, please cite our paper.
 ```
-@inproceedings{zhang2025unified,
-  title={ A Unified Random Walk, Its Induced  Laplacians and  Spectral Convolutions for Deep Hypergraph Learning},
-  author={ Jiying Zhang, Fuyang Li, Xi Xiao, Guanzi Chen, Tingyang Xu, Yu Rong, Junzhou Huang, Yatao Bian},
-  booktitle={Arxiv},
-  year={2025}
-}
+@ARTICLE{11103747,
+  author={Zhang, Jiying and Li, Fuyang and Xiao, Xi and Chen, Guanzi and Xu, Tingyang and Rong, Yu and Huang, Junzhou and Bian, Yatao},
+  journal={IEEE Transactions on Pattern Analysis and Machine Intelligence}, 
+  title={A Unified Random Walk, Its Induced Laplacians and Spectral Convolutions for Deep Hypergraph Learning}, 
+  year={2025},
+  volume={47},
+  number={11},
+  pages={10129-10141},
+  keywords={Laplace equations;Proteins;Electronic mail;Visualization;Optical wavelength conversion;Data mining;Directed graphs;Convolution;Vectors;Training;Hypergraph learning;hypergraph random walks;hypergraph Laplaican;equivalence},
+  doi={10.1109/TPAMI.2025.3593880}}
 ```
 We would like to appreciate the excellent work of ED-HNN ([official repository](https://github.com/Graph-COM/ED-HNN)), which lays a solid foundation for our work.
 
